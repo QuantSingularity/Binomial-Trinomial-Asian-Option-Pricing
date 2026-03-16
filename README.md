@@ -97,7 +97,7 @@ r_asian = r - sigma^2/2 + sigma_asian^2/2
 
 Dynamic delta hedging rebalances the hedge portfolio at each of the N=25 time steps. At each step, the geometric Asian delta formula provides an approximation to the true arithmetic Asian delta:
 
-delta_geometric = exp((r_asian - r)_T) _ N(d1) [for a call]
+delta*geometric = exp((r_asian - r)\_T) * N(d1) [for a call]
 
 The hedging portfolio consists of a short option position offset by a dynamic stock holding of (-delta) shares. Cash flows from buying/selling shares are accumulated in a risk-free cash account earning r.
 
